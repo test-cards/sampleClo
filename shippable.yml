@@ -6,5 +6,10 @@ language: clojure
 go:
   - lein2
 build:
+  pre_ci_boot:
+    image_name: drydock/u12clo
+    image_tag: prod
+    pull: true
+    options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
   ci:
     - lein version
