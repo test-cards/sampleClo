@@ -7,4 +7,4 @@ go:
   - lein2
 build:
   ci:
-    clojure-version
+    - lein version
