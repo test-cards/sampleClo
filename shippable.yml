@@ -1,0 +1,15 @@
+
+# Language setting
+language: clojure
+
+# Version number
+lein:
+  - lein2
+build:
+  pre_ci_boot:
+    image_name: drydock/u14clo
+    image_tag: prod
+    pull: true
+    options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
+  ci:
+    - lein version
