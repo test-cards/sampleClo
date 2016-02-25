@@ -1,0 +1,24 @@
+# Language setting
+language: clojure
+
+# Version number
+lein:
+  - lein2
+  
+services:
+  - mysql
+  - postgres
+  - mongodb
+  - elasticsearch
+  - redis
+  - memcache
+  - rabbitmq
+ 
+build:
+  pre_ci_boot:
+    image_name: drydock/u12clopls
+    image_tag: prod
+    pull: true
+  
+  ci:
+    - lein version
