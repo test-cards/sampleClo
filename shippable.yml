@@ -1,0 +1,10 @@
+
+# Language setting
+language: clojure
+
+# Version number
+lein:
+  - lein2
+build:
+  ci:
+    - lein version
