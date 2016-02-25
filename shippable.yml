@@ -3,7 +3,7 @@
 language: clojure
 
 # Version number
-go:
+lein:
   - lein2
 build:
   ci:
