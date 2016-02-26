@@ -1,0 +1,25 @@
+language: clojure
+services:
+  - mysql
+  - postgres
+  - redis
+  - memcache
+  - elasticsearch
+  - mongodb
+  - rabbitmq
+  - neo4j
+  - couchdb
+  - rethinkdb
+
+# Version number
+lein:
+  - lein2
+ 
+
+build:
+  pre_ci_boot:
+    image_name: drydock/u14cloall
+    image_tag: prod
+    pull: true  
+  ci:
+    - lein version
