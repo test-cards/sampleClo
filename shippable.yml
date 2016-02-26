@@ -1,12 +1,12 @@
 language: clojure
 services:
-  #- mysql
-  #- postgres
-  #- redis
-  #- memcache
-  #- elasticsearch
-  #- mongodb
-  #- rabbitmq
+  - mysql
+  - postgres
+  - redis
+  - memcache
+  - elasticsearch
+  - mongodb
+  - rabbitmq
   - neo4j
   - couchdb
   - rethinkdb
