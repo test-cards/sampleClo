@@ -8,3 +8,4 @@ lein:
 build:
   ci:
     - lein version
+  cache: true
